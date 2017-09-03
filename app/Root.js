@@ -44,7 +44,7 @@ let App = React.createClass({
 			'random'
         ];
         //订阅CHANGE_REPEAT事件，改变歌曲循环方式
-		PubSub.subscribe('CHANAGE_REPEAT', () => {
+		PubSub.subscribe('CHANGE_REPEAT', () => {
 			let index = repeatList.indexOf(this.state.repeatType);
 			index = (index + 1) % repeatList.length;
 			this.setState({
